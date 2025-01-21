@@ -3,6 +3,8 @@
 #include <fstream>
 #include <sstream>
 #include <algorithm>
+#include <queue>  // Para usar a fila
+
 using namespace std;
 
 // Estrutura para representar um item de estoque
@@ -20,7 +22,23 @@ public:
     bool folha;                 // Indica se o nó é folha
 
     No(bool ehFolha) : folha(ehFolha) {}
+
+    // Função para percorrer a árvore e gerar o output para Graphviz
+    void percorreB(ostream& out, int level);
 };
+
+void No::percorreB(ostream& out, int level) {
+        out << "Node" << this << " [label=\"";
+        for (const auto& chave : chaves) {
+            out << chave.id << " ";
+        }
+        out << "\"];\n";
+        
+        for (size_t i = 0; i < filhos.size(); ++i) {
+            out << "Node" << this << " -> Node" << filhos[i] << ";\n";
+            filhos[i]->percorreB(out, level + 1); 
+        }
+}
 
 // Classe que representa a árvore B
 class ArvoreB {
@@ -108,9 +126,59 @@ public:
     Item* buscar(int id) {
         return buscar(raiz, id);
     }
+
+    // Função para imprimir a árvore por níveis
+    void imprimirPorNiveis() {
+        if (!raiz) return;
+
+        queue<No*> fila;  // Usar fila para percorrer por níveis
+        fila.push(raiz);
+
+        int nivel = 1;
+
+        while (!fila.empty()) {
+            int tamanho = fila.size();
+            cout << "Nível " << nivel << ": ";
+
+            for (int i = 0; i < tamanho; ++i) {
+                No* no = fila.front();
+                fila.pop();
+
+                // Imprime as chaves do nó
+                cout << "[";
+                for (size_t j = 0; j < no->chaves.size(); ++j) {
+                    cout << no->chaves[j].id;
+                    if (j < no->chaves.size() - 1) cout << ", ";
+                }
+                cout << "] ";
+
+                // Se não for nó folha, adiciona os filhos na fila
+                if (!no->folha) {
+                    for (No* filho : no->filhos) {
+                        fila.push(filho);
+                    }
+                }
+            }
+
+            cout << endl;
+            nivel++;
+        }
+    }
+
+    void visualiza(const string& nomeArq) {
+        ofstream file(nomeArq);
+        file << "digraph BTree {\nnode [shape=record];\n";  // Definir o formato do nó no Graphviz
+
+        if (raiz) {
+            raiz->percorreB(file, 0);  // Inicia a recursão a partir da raiz
+        }
+
+        file << "}\n";  // Fecha a definição do gráfico
+        file.close();
+        cout << "Arquivo " << nomeArq << " gerado para visualização.\n";
+    }
 };
 
-// Função para carregar os dados do arquivo
 vector<Item> carregarDados(const string& caminhoArquivo) {
     ifstream arquivo(caminhoArquivo);
     vector<Item> dados;
@@ -142,34 +210,76 @@ void exibirMenu() {
     cout << "1. Buscar item\n";
     cout << "2. Inserir item\n";
     cout << "3. Remover item (não implementado)\n";
-    cout << "4. Sair\n";
+    cout << "4. Imprimir árvore por níveis\n";
+    cout << "5. Gerar arquivo .dot da árvore\n";
+    cout << "6. Sair\n"; 
     cout << "Escolha uma opção: ";
 }
 
 int main() {
-    // Caminho para o arquivo de dados
-    string caminhoArquivo = "/home/vinicius/Downloads/pdfs/edb/dadosB.txt";
+    string caminhoArquivo = "dadosB.txt";
     vector<Item> dados = carregarDados(caminhoArquivo);
 
     // Cria a árvore B com grau mínimo 3
     ArvoreB arvore(3);
 
-    // Insere os dados na árvore
     for (const auto& item : dados) {
         arvore.inserir(item);
     }
 
-    // Pesquisa por um item específico
-    int idProcurado = 110;
-    cout << "Digite o ID do item que deseja: ";
-    cin >> idProcurado;
-    
-    Item* resultado = arvore.buscar(idProcurado);
-    if (resultado) {
-        cout << "Item encontrado: " << resultado->nome << ", Quantidade: " << resultado->quantidade << endl;
-    } else {
-        cout << "Item com ID " << idProcurado << " nao encontrado." << endl;
-    }
+    int opcao;
+    do {
+        exibirMenu();
+        cin >> opcao;
+
+        switch (opcao) {
+        case 1: {
+            int idProcurado;
+            cout << "Digite o ID do item que deseja: ";
+            cin >> idProcurado;
+
+            Item* resultado = arvore.buscar(idProcurado);
+            if (resultado) {
+                cout << "Item encontrado: " << resultado->nome << ", Quantidade: " << resultado->quantidade << endl;
+            } else {
+                cout << "Item com ID " << idProcurado << " não encontrado." << endl;
+            }
+            break;
+        }
+        case 2: {
+            int id, quantidade;
+            string nome;
+            cout << "Digite o ID do item: ";
+            cin >> id;
+            cout << "Digite o nome do item: ";
+            cin.ignore();
+            getline(cin, nome);
+            cout << "Digite a quantidade do item: ";
+            cin >> quantidade;
+
+            arvore.inserir({id, nome, quantidade});
+            cout << "Item inserido com sucesso.\n";
+            break;
+        }
+        case 4:
+            arvore.imprimirPorNiveis();
+            break;
+        case 5: {
+            string nomeArquivo;
+            cout << "Digite o nome do arquivo .dot (exemplo: arvore.dot): ";
+            cin >> nomeArquivo;
+
+            arvore.visualiza(nomeArquivo); 
+            break;
+        }
+        case 6:
+            cout << "Saindo...\n";
+            break;
+        default:
+            cout << "Opção inválida. Tente novamente.\n";
+            break;
+        }
+    } while (opcao != 6);
 
     return 0;
 }
