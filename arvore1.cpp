@@ -136,6 +136,16 @@ vector<Item> carregarDados(const string& caminhoArquivo) {
     return dados;
 }
 
+// Função para exibir o menu
+void exibirMenu() {
+    cout << "\n--- MENU ---\n";
+    cout << "1. Buscar item\n";
+    cout << "2. Inserir item\n";
+    cout << "3. Remover item (não implementado)\n";
+    cout << "4. Sair\n";
+    cout << "Escolha uma opção: ";
+}
+
 int main() {
     // Caminho para o arquivo de dados
     string caminhoArquivo = "/home/vinicius/Downloads/pdfs/edb/dadosB.txt";
