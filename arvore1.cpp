@@ -151,6 +151,9 @@ int main() {
 
     // Pesquisa por um item específico
     int idProcurado = 110;
+    cout << "Digite o ID do item que deseja: ";
+    cin >> idProcurado;
+    
     Item* resultado = arvore.buscar(idProcurado);
     if (resultado) {
         cout << "Item encontrado: " << resultado->nome << ", Quantidade: " << resultado->quantidade << endl;
