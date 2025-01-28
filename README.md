@@ -21,6 +21,13 @@
 - **Tiego** - Implementação das funções de remoção.
 
 
+## Video
+
+Assista o breve video de 3 minutos explicando o repositório e o código: 
+
+https://youtu.be/TrX7MbxtwLk
+
+
 ## Descrição do Projeto
 Este projeto foi desenvolvido como parte da disciplina **Estruturas de Dados Básicas II (EDB2)** e consiste na implementação de uma **Árvore B**.
 
