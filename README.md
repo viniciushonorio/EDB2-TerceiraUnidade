@@ -20,7 +20,7 @@
 
 - **Tiego** - Implementação das funções de remoção.
 
-- **Moisés** - Implementação dos códigos de testes, menu e leitura da árvore.
+- **Moisés** - Organização do código, documentação em doxygen, contribuiu para implementação das funcionalidades do menu e métodos.
 ## Video
 
 Assista o breve video, de 3 minutos, explicando o projeto: 
