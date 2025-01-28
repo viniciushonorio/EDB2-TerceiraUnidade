@@ -60,5 +60,44 @@ Para visualizar a saída, você pode usar a opção 4, que exibe a árvore por n
 ```bash
 dot -Tpng <nome.dot> -o <nome.png>
 ```
+---
+## Exemplos de operações:
+### Árvores geradas pelo arquivo `dadosB.txt`
+A seguir estão as imagens geradas pelo Graphviz. A primeira árvore foi gerada com os dados do arquivo `dadosB.txt` sem embaralhá-los. As segunda e terceira árvores tiveram os dados embaralhados.
+
+| **Dados inseridos na sequencia do arquivo**                |
+|------------------------------------|
+| ![Antes](imagens/dadosB.png) |
+
+| **Dados inseridos de forma aleatória 1**                |
+|------------------------------------|
+| ![Antes](imagens/dadosBRandom.png) |
+
+| **Dados inseridos de forma aleatória 2**                |
+|------------------------------------|
+| ![Antes](imagens/dadosBRandom2.png) |
+### Inserção:
+Inserindo um item com ID = 100 na árvore.
+
+| **Inserindo: ID = 100**                |
+|------------------------------------|
+| ![Antes](imagens/inserir100.png) |
+
+### Remoção:
+Testes de remoção realizados na árvore gerada pelos dados inseridos na sequência do arquivo `dadosB.txt`.
+
+| **removendo: ID = 120**            |
+|------------------------------------|
+| ![Antes](imagens/remove120.png) |
+
+| **removendo: ID = 124**            |
+|------------------------------------|
+| ![Antes](imagens/remove124.png) |
+
+| **removendo: ID = 120 e 124**      |
+|------------------------------------|
+| ![Antes](imagens/rmv124e120.png) |
+
+
 
 
