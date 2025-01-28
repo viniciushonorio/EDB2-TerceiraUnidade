@@ -1,47 +1,64 @@
-# EDB2 terceira unidade
+# EDB2 - Terceira Unidade: Implementação de uma Árvore B
 
-Trabalho da disciplina Estruturas de Dados 2 na universidade Universidade Federal do Rio Grande do Norte (UFRN), IMD.
+**Universidade Federal do Rio Grande do Norte (UFRN)**  
+**Centro de Ciências Exatas e da Terra (CCET)**  
+**Departamento de Informática e Matemática Aplicada (DIMAp)**  
+**Curso: Bacharelado em Ciência da Computação**  
 
-Terceira unidade da disciplina.
+### Participantes
+- **Raul Ramalho Lucena** - raulramalho2016@gmail.com
+- **Moisés Átila Rodrigues Lima** - moisesignnel@gmail.com
+- **Vinicius Honório dos Santos** - vhonorio2003@gmail.com
+- **Carlos Henrique da Silva Guimarães** - ch.guimaraes87@gmail.com
+- **Tiego Rafael Belo da Rocha** - tiegorafael@gmail.com
 
-## O que é?
+### Contribuições:
+---
 
-Implementação da Árvore B e métodos: busca, inserção e remoção.
+## Descrição do Projeto
+Este projeto foi desenvolvido como parte da disciplina **Estruturas de Dados Básicas II (EDB2)** e consiste na implementação de uma **Árvore B**.
 
-Sua respectiva visualização em fluxograma.
+O programa contém as seguintes operações:
+- **Inserção** de itens na Árvore B.
+- **Busca** de itens por seu identificador (ID).
+- **Remoção** de itens da Árvore B.
+- **Impressão** da árvore por níveis.
+- **Embaralhar dados de entrada** como os dados de entrada são obtidos através de um arquivo (.txt), a forma da árvore pode variar dependendo da ordem de inserção dos dados. Esta opção permite embaralhar os dados de entrada para testar diferentes configurações e garantir a robustez da implementação.
+- **Geração de visualização** da estrutura da árvore no formato Graphviz (`.dot`).
 
-Gravação em vídeo demonstrando o código e exemplos de uso.
+---
 
-## Ambiente computacional, Hardware, IDE e Tecnicismos
+## Como Executar o Projeto
 
-VSCODE
+### Compilação
+Certifique-se de estar na pasta src. Use o comando abaixo para compilar o projeto:  
+```bash
+g++ main.cpp ArvoreB.cpp No.cpp -o main
+```
+### Executar
+```bash
+./main
+```
+### Como utilizar:
+Ao executar o programa, os dados serão lidos a partir do arquivo `dadosB.txt`, conforme requisitado nas especificações do projeto. O arquivo se encontra na pasta `dados`. Caso deseje alterar o arquivo de entrada, basta ir no arquivo `main.cpp` e modificar o caminho do arquivo, por exemplo:
+```cpp
+string caminhoArquivo = "../dados/dadosB4.txt";
+```
+O programa vai exibir o menu com as opções do projeto. Basta selecionar a opção desejada. 
+```bash
+--- MENU ---
+1. Buscar item
+2. Inserir item
+3. Remover item
+4. Imprimir árvore por níveis
+5. Gerar arquivo .dot da árvore
+6. Embaralhar dados de entrada
+7. Sair
+Escolha uma opção: 
+```
+Para visualizar a saída, você pode usar a opção 4, que exibe a árvore por nível no terminal, ou a opção 5, que gera o arquivo (`.dot`). Para gerar o arquivo PNG a partir do (`.dot`), use:
+```bash
+dot -Tpng <nome.dot> -o <nome.png>
+```
 
-Hardware
 
-## Assista o Video:
-
-(link placeholder)
-
-## Participantes:
-
-Raul Ramalho Lucena @ raulramalho2016@gmail.com
-
-Moisés Átila Rodrigues Lima @ moisesignnel@gmail.com
-
-Vinicius Honório dos Santos @ vhonorio2003@gmail.com
-
-Carlos Henrique da Silva Guimarães @ ch.guimaraes87@gmail.cm
-
-Tiego Rafael Belo da Rocha @ tiegorafael@gmail.com
-
-## Contribuição
-
-Raul - Auxiliou na inserção e busca, gravou o video e testou o código para alguns exemplos base.
-
-Vinicius - 
-
-Moisés - 
-
-Carlos - 
-
-Tiego - 
