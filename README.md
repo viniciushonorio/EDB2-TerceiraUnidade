@@ -5,7 +5,10 @@ Trabalho da disciplina Estruturas de Dados 2 da universidade UFRN.
 # O que é?
 
 Implementação da Árvore B e métodos busca, inserção e remoção.
-Sua respectiva visualização em fluxograma e um breve video demonstrando o código e exemplos de uso com exemplos em sala aula.
+
+Sua respectiva visualização em fluxograma.
+
+Gravação em vídeo demonstrando o código e exemplos de uso.
 
 # Participantes:
 Raul Ramalho Lucena @ raulramalho2016@gmail.com
