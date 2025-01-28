@@ -21,6 +21,8 @@
 - **Tiego** - Implementação das funções de remoção.
 
 - **Moisés** - Organização do código, documentação em doxygen, contribuiu para implementação das funcionalidades do menu e métodos.
+
+- **Carlos** - Produziu o algoritmo em forma de fluxograma da exclusão de uma informação em uma árvore B.
 ## Video
 
 Assista o breve video, de 3 minutos, explicando o projeto: 
