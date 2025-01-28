@@ -23,7 +23,7 @@
 
 ## Video
 
-Assista o breve video de 3 minutos explicando o repositório e o código: 
+Assista o breve video, de 3 minutos, explicando o projeto: 
 
 https://youtu.be/TrX7MbxtwLk
 
