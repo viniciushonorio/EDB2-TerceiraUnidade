@@ -1,0 +1,50 @@
+{1, "Teclado", 50}
+{2, "Mouse", 35}
+{3, "Monitor", 20}
+{4, "Cabo HDMI", 100}
+{5, "Placa de Vídeo", 10}
+{6, "Fonte", 25}
+{7, "Processador", 5}
+{8, "Memória RAM", 15}
+{9, "SSD", 30}
+{10, "HD Externo", 40}
+{11, "Notebook", 8}
+{12, "Fone de Ouvido", 60}
+{13, "Microfone", 12}
+{14, "Caixa de Som", 18}
+{15, "Webcam", 22}
+{16, "Roteador", 50}
+{17, "Switch", 10}
+{18, "Placa Mãe", 7}
+{19, "Cooler", 28}
+{20, "Cabo USB", 55}
+{21, "Impressora", 9}
+{22, "Scanner", 14}
+{23, "Papel A4", 120}
+{24, "Estabilizador", 13}
+{25, "No-break", 11}
+{26, "Carregador", 45}
+{27, "Adaptador", 32}
+{28, "Projetor", 6}
+{29, "Lâmpada LED", 75}
+{30, "Bateria", 19}
+{31, "Disco de Backup", 4}
+{32, "Cabo VGA", 20}
+{33, "Cabo DisplayPort", 15}
+{34, "Hub USB", 16}
+{35, "Dock Station", 8}
+{36, "Tablet", 5}
+{37, "Pen Drive", 90}
+{38, "Cartão de Memória", 70}
+{39, "Câmera Digital", 3}
+{40, "Estação de Trabalho", 2}
+{41, "Placa de Rede", 12}
+{42, "Controladora RAID", 1}
+{43, "Teclado Gamer", 18}
+{44, "Mouse Gamer", 22}
+{45, "Headset Gamer", 10}
+{46, "Cadeira Gamer", 7}
+{47, "Mesa para PC", 5}
+{48, "Monitor Curvo", 9}
+{49, "Smartphone", 50}
+{50, "Cabo Lightning", 36}

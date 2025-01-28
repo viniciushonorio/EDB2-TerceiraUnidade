@@ -1,0 +1,20 @@
+{1, "Teclado", 50}
+{2, "Mouse", 35}
+{3, "Monitor", 20}
+{4, "Cabo HDMI", 100}
+{9, "Placa de Vídeo", 10}
+{15, "Fonte", 25}
+{20, "Processador", 5}
+{30, "Memória RAM", 15}
+{40, "SSD", 30}
+{46, "HD Externo", 40}
+{50, "Notebook", 8}
+{52, "Fone de Ouvido", 60}
+{56, "Microfone", 12}
+{58, "Caixa de Som", 18}
+{60, "Webcam", 22}
+{65, "Roteador", 50}
+{70, "Switch", 10}
+{80, "Placa Mãe", 7}
+{85, "Cooler", 28}
+{90, "Cabo USB", 55}
