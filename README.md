@@ -4,7 +4,7 @@ Trabalho da disciplina Estruturas de Dados 2 na universidade Universidade Federa
 
 Terceira unidade da disciplina.
 
-### O que é?
+## O que é?
 
 Implementação da Árvore B e métodos: busca, inserção e remoção.
 
@@ -12,14 +12,17 @@ Sua respectiva visualização em fluxograma.
 
 Gravação em vídeo demonstrando o código e exemplos de uso.
 
-### Ambiente computacional, hardware, IDE e tecnicismos
+## Ambiente computacional, Hardware, IDE e Tecnicismos
 
 VSCODE
 
 Hardware
 
+## Assista o Video:
 
-# Participantes:
+(link placeholder)
+
+## Participantes:
 
 Raul Ramalho Lucena @ raulramalho2016@gmail.com
 
@@ -31,7 +34,7 @@ Carlos Henrique da Silva Guimarães @ ch.guimaraes87@gmail.cm
 
 Tiego Rafael Belo da Rocha @ tiegorafael@gmail.com
 
-# Contribuição
+## Contribuição
 
 Raul -
 
