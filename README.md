@@ -70,7 +70,7 @@ g++ main.cpp ArvoreB.cpp No.cpp -o main
 ### Como utilizar:
 Ao executar o programa, os dados serão lidos a partir do arquivo `dadosB.txt`, conforme requisitado nas especificações do projeto. O arquivo se encontra na pasta `dados`. Caso deseje alterar o arquivo de entrada, basta ir no arquivo `main.cpp` e modificar o caminho do arquivo, por exemplo:
 ```cpp
-string caminhoArquivo = "../dados/dadosB4.txt";
+string caminhoArquivo = "./dados/dadosB4.txt";
 ```
 O programa vai exibir o menu com as opções do projeto. Basta selecionar a opção desejada. 
 ```bash
