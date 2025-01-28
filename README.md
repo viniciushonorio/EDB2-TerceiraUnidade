@@ -1,8 +1,11 @@
 # EDB2 terceira unidade
-Terceira unidade de Estruturas de Dados Básicas 2 - UFRN - IMD.
+
+Trabalho da disciplina Estruturas de Dados 2 da universidade UFRN. 
 
 # O que é?
 
+Implementação da Árvore B e métodos busca, inserção e remoção.
+Sua respectiva visualização em fluxograma e um breve video demonstrando o código e exemplos de uso com exemplos em sala aula.
 
 # Participantes:
 Raul Ramalho Lucena @ raulramalho2016@gmail.com
@@ -18,6 +21,7 @@ Tiego Rafael Belo da Rocha @ tiegorafael@gmail.com
 # Contribuição
 
 Raul -
+
 Vinicius - 
 
 Moisés - 
