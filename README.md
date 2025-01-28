@@ -14,6 +14,7 @@
 
 ### Contribuições:
 ---
+- **Vinicius** - Implementou inserção e busca em uma árvore B e contribuiu na implementação do menu.
 
 ## Descrição do Projeto
 Este projeto foi desenvolvido como parte da disciplina **Estruturas de Dados Básicas II (EDB2)** e consiste na implementação de uma **Árvore B**.
