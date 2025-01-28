@@ -33,9 +33,9 @@ vector<Item> carregarDados(const string& caminhoArquivo) {
 }
 
 void embaralharDados(vector<Item>& dados) {
-    std::random_device rd; // Gerador de números aleatórios
-    std::mt19937 g(rd()); // Inicialização do motor Mersenne Twister
-    std::shuffle(dados.begin(), dados.end(), g); // Embaralha os dados
+    std::random_device rd;
+    std::mt19937 g(rd()); 
+    std::shuffle(dados.begin(), dados.end(), g); 
 }
 
 void exibirMenu() {
