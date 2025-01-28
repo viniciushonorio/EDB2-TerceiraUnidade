@@ -51,7 +51,7 @@ void exibirMenu() {
 }
 
 int main() {
-    string caminhoArquivo = "./dados/dadosB.txt";
+    string caminhoArquivo = "../dados/dadosB.txt";
     vector<Item> dados = carregarDados(caminhoArquivo);
 
     // Cria a árvore B com grau mínimo 3
