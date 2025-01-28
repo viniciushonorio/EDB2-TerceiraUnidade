@@ -16,7 +16,7 @@
 ---
 - **Vinicius** - Implementou inserção e busca em uma árvore B e contribuiu na implementação do menu.
 
-- **Raul** - Auxiliou na implementação da inserção, testes manuais e troubleshooting.
+- **Raul** - Auxiliou na implementação da inserção, testes manuais e troubleshooting. Gravou o video.
 
 
 ## Descrição do Projeto
