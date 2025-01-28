@@ -18,6 +18,8 @@
 
 - **Raul** - Auxiliou na implementação da inserção, testes manuais e troubleshooting. Gravou o video.
 
+- **Tiego** - Implementação das funções de remoção.
+
 
 ## Descrição do Projeto
 Este projeto foi desenvolvido como parte da disciplina **Estruturas de Dados Básicas II (EDB2)** e consiste na implementação de uma **Árvore B**.
