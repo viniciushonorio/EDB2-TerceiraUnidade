@@ -36,7 +36,7 @@ Tiego Rafael Belo da Rocha @ tiegorafael@gmail.com
 
 ## Contribuição
 
-Raul -
+Raul - Auxiliou na inserção e busca, gravou o video e testou o código para alguns exemplos base.
 
 Vinicius - 
 
